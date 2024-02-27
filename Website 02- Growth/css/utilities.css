@@ -1,0 +1,139 @@
+/*               STYLE FOR UTILITIES CLASS  
+===================================================== */
+:root {
+    --clr-primary: #4891ff;
+    --clr-secondary: rgb(255, 128, 0);
+    --clr-light: white;
+    --clr-dark: rgb(21, 21, 21);
+    --clr-gray: rgba(212, 210, 210, 0.785);
+    --clr-hover: #1d75f8;
+}
+
+
+ul, li, a, button {
+    background: transparent;
+    list-style: none;
+    color: black;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+p {
+    
+}
+  
+img {
+    max-width: 100%;
+}
+
+h1 {
+    
+}
+
+/*               STYLE FOR FLEX AND GRID 
+===================================================== */
+/* style for flex  */
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+/* style for grid  */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/*               STYLE FOR BUTTON 
+===================================================== */
+/* style for button  */
+.btn {
+    display: inline-block;
+    color: var(--clr-light);
+    background: var(--clr-primary);
+    font-weight: 600;
+    padding: 13px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn:hover {
+    background: var(--clr-hover);
+}
+
+.btn-2 {
+    display: inline-block;
+    color: var(--clr-dark);
+    background: var(--clr-gray);
+    font-weight: 600;
+    padding: 13px 20px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn-2:hover {
+    background: var(--clr-light);
+    border: 2px solid var(--clr-primary);
+}
+
+
+/*               STYLE FOR UTILITIES CLASS  
+===================================================== */
+/* CONTAINER  */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* CARD  */
+.card {
+    text-align: left;
+    padding: 25px 20px;
+}
+
+
+/* TEXT  */
+.text-xxl {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 40px 0 20px;
+}
+
+.text-xl {
+    font-size: 2.2rem;
+    font-weight: normal;
+    line-height: 1.4;
+    margin: 40px 0 20px;
+}
+
+.text-lg {
+    font-size: 1.8rem;
+    font-weight: normal;
+    line-height: 1.4;
+    margin: 30px 0 20px;
+}
+
+.text-md {
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.4;
+    margin: 20px 0 10px;
+}
+
+.text-sm {
+    font-size: .9rem;
+    font-weight: normal;
+    line-height: 1.4;
+    margin: 10px 0 5px;
+}

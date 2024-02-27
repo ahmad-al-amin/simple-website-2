@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300;400;600;700&display=swap');
+
+/*                   GLOBAL STYLE 
+===================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    background: #fff;
+}
+
+
+/*                          HEADER STYLE 
+========================================================================
+===================================================================== */
+header {
+    background: var(--clr-light);
+    padding: 20px;
+}
+
+header .container {
+    justify-content: space-between;
+}
+
+header .container ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: .5s;
+}
+header .container ul li a:hover {
+    color: var(--clr-primary);
+}
+
+header .container ul li:last-child a {
+    margin-left: 10px;
+}
+
+header .container button {
+    color: var(--clr-dark);
+    font-weight: 600;
+}
+
+/*                            HERO STYLE 
+========================================================================
+===================================================================== */
+.hero {
+    margin-bottom: 50px;
+    position: relative;
+}
+.hero:before {
+    content: " ▶ ";
+    position: absolute;
+    background: var(--clr-light);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    bottom: -75px;
+    left: 48%;
+    font-size: 40px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero .container {
+    background: url('../assets/hero-bg.png') no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    height: 550px;
+}
+
+.hero .container .content {
+    width: 70%;
+}
+
+.hero .container .content .hero-text{
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+/*                            VIDEO SECTION STYLE 
+========================================================================
+===================================================================== */
+.video {
+    padding: 10px 0 40px;
+    text-align: center;
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    position: relative;
+}
+.video:before {
+    content: "";
+    position: absolute;
+    background: var(--clr-dark);
+    width: 50px;
+    height: 50px;
+    bottom: -20px;
+    left: 48%;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.video .video-content {
+    flex-direction: column;
+}
+
+.video .video-content .btn {
+    margin: 20px 0;
+}
+
+/*                            REVIEW SECTION STYLE 
+========================================================================
+===================================================================== */
+.review {
+
+}
+
+.review .container {
+    margin-bottom: 50px; 
+}
+
+.review .container .heading {
+    width: 650px;
+    margin-bottom: 35px;
+}
+
+.review .content .card {
+    background: var(--clr-gray);
+    border-radius: 10px;
+    padding: 35px 20px 25px;
+}
+
+.review .content .card p:nth-child(2) {
+    font-weight: bold;
+    padding: 30px 0 0 0;
+}
+
+.review .content .card p:nth-child(1) {
+    position: relative;
+}
+.review .content .card p:nth-child(1):before {
+    content: ' ” ';
+    position: absolute;
+    left: 40%;
+    top: -135px;
+    color: rgba(128, 128, 128, 0.358);
+    font-size: 200px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+} 
+
+/*                            PRICING SECTION STYLE 
+========================================================================
+===================================================================== */
+.pricing {
+    background: var(--clr-dark)
+}
+
+.pricing .container-sm {
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.pricing .container-sm .sign {
+    position: absolute;
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    top: -35px;
+    left: 46%;
+    font-size: 45px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing .container-sm .heading {
+    padding: 30px 0 0 0;
+    color: var(--clr-light);
+}
+
+.pricing .container-sm p {
+    padding: 10px 0;
+    color: var(--clr-light);
+    font-size: 1.1rem;
+}
+
+.pricing .container-sm p:last-child {
+    padding: 0 0 50px;
+}
+
+.pricing .content {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 40px 0;
+    gap: 30px;
+}
+
+.pricing .content .card {
+    background: var(--clr-primary);
+    border-radius: 10px;
+    padding: 0 25px;
+}
+
+.pricing .content .card h2{
+    color: var(--clr-light);
+}
+
+.pricing .content .card p{
+    color: var(--clr-dark);
+}
+
+.pricing .content .card .text-sm {
+    color: var(--clr-light);
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.pricing .content .card .text-sm span{
+    color: var(--clr-light);
+    font-size: 1rem;
+}
+
+.pricing .content .card ul li{
+    color: var(--clr-light);
+    font-weight: normal;
+    padding-top: 10px;
+}
+
+.pricing .content .card a {
+    margin: 20px 0;
+    width: 100%;
+}
+
+
+/*                            FAQ SECTION STYLE 
+========================================================================
+===================================================================== */
+.faq {
+    position: relative;
+}
+
+.faq .container-sm .sign {
+    position: absolute;
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    top: -85px;
+    left: 47.5%;
+    font-size: 50px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.faq .container-sm {
+    margin-bottom: 50px;
+}
+
+.faq .container-sm h1 {
+    margin: 50px;
+    text-align: center;
+}
+
+.faq .container-sm .faq-menu {
+    background: var(--clr-gray);
+    margin: -20px auto 50px;
+    padding: 10px 0;
+    text-align: center;
+    gap: 25px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    width: 420px;
+    border-radius: 10px;
+}
+
+.faq .container-sm .faq-menu li {
+    background: transparent;
+    padding: 10px 20px ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.faq .container-sm .faq-menu .active {
+    background: var(--clr-primary);
+    color: var(--clr-light);
+}
+
+.faq .faq-content .header{
+    padding: 20px 0 10px;
+    margin-bottom: 15px;
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.faq .faq-content .header h4{
+    font-weight: 600;
+    width: 95%;
+    transition: .5s;
+}
+
+.faq .faq-group {
+    border-bottom: 1.5px solid var(--clr-gray);
+    padding-bottom: 20px;
+}
+
+.faq .faq-content .group-body {
+    display: none;
+    transition: .4s;
+}
+
+.faq .faq-content .header {
+    transition: all .5s;
+}
+
+.faq .faq-content .header:hover + .group-body {
+    display: block;
+    color: var(--clr-dark);
+    transition: all .5s;
+}
+
+/*                            FOOTER SECTION STYLE 
+========================================================================
+===================================================================== */
+footer {
+    background: var(--clr-dark);
+    margin-bottom: -50px;
+    position: relative;
+}
+
+footer:before {
+    content: "";
+    position: absolute;
+    background: var(--clr-light);
+    width: 50px;
+    height: 50px;
+    top: -30px;
+    left: 48%;
+    transform: rotate(135deg);
+}
+
+footer .container {
+    padding-bottom: 50px;
+    margin-bottom: -50px;
+    color: var(--clr-light);
+}
+
+footer .container a img{
+    margin: 30px 0 10px;
+}
+
+footer .container {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container .card{
+    background: var(--clr-light);
+    border-radius: 10px;
+    color: var(--clr-dark);
+    width: 360px;
+    margin: 20px 0 0;
+}
+
+footer .container .card p{
+    font-size: .9rem;
+    padding-bottom: 8px;
+}
+
+footer .container .card form{
+    flex-direction: column;
+}
+
+footer .container .card form input{
+    padding: 13px 20px;
+    margin: 12px 0;
+    border: 2px solid var(--clr-primary);
+    border-radius: 10px;
+}
+
+footer .container div h4 {
+    padding: 20px 0;
+}
+
+footer .container div ul li a {
+    color: var(--clr-gray);
+}
